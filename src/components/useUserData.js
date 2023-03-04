@@ -10,21 +10,21 @@ export const useUserData = () => {
   };
 
   useEffect(() => {
-  const fetchUserHandler = async () => {
-    setError("");
-    try {
-      const response = await fetch(`https://api.github.com/users/${choice}`);
-      if (!response.ok) {
-        throw new Error(response.statusText);
+    const fetchUserHandler = async () => {
+      setError("");
+      try {
+        const response = await fetch(`https://api.github.com/users/${choice}`);
+        if (!response.ok) {
+          throw new Error(response.statusText);
+        }
+        const newUser = await response.json();
+        setUser(newUser);
+      } catch (error) {
+        setError("No results");
       }
-      const newUser = await response.json();
-      setUser(newUser);
-    } catch (error) {
-      setError("No results");
-    }
-  };
-  setTimeout(fetchUserHandler);
-}, [choice]);
+    };
+    setTimeout(fetchUserHandler);
+  }, [choice]);
 
   useEffect(() => {
     const searchHistory =
@@ -41,5 +41,5 @@ export const useUserData = () => {
     new Set(JSON.parse(localStorage.getItem("searchHistory") || "[]"))
   );
 
-  return {changeUser, user , searchHistory, error};
+  return { changeUser, user, searchHistory, error };
 };
