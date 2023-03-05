@@ -4,22 +4,26 @@ import styled from "styled-components";
 const Form = styled.form`
   display: flex;
   padding: 10px;
+
   @media (max-width: 400px) {
     flex-direction: column;
   }
 `;
 
-export const Input = styled.input`
+const Input = styled.input`
   padding: 0px 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  border: none;
   border-radius: 5px;
   height: 48px;
   flex-grow: 1;
 `;
 
-export const Button = styled.button`
+const Button = styled.button`
   margin-left: 10px;
   width: 170px;
   height: 48px;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
   line-height: 125%;
   text-align: center;
@@ -30,7 +34,7 @@ export const Button = styled.button`
   cursor: pointer;
   transition: 0.5s;
   :hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   :active {
     background: #74c69d;
