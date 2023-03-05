@@ -40,7 +40,8 @@ const Button = styled.button`
     background: #74c69d;
   }
   @media (max-width: 400px) {
-    margin: 10px auto;
+    margin: 10px 0 0;
+    width: 100%;
   }
 `;
 
