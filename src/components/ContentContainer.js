@@ -13,14 +13,20 @@ const Container = styled.main`
 const ContentContainer = () => {
   const { changeUser, user, searchHistory, error } = useUserData();
 
+  const visible = JSON.parse(localStorage.getItem("searchHistory"));
+
   return (
     <Container>
       <SearchBar changeUser={changeUser} error={error} />
       <Card user={user} />
-      <HistoryCard
-        searchHistory={searchHistory}
-        handleSearchHistory={changeUser}
-      />
+      {visible !== null ? (
+        <HistoryCard
+          searchHistory={searchHistory}
+          handleSearchHistory={changeUser}
+        />
+      ) : (
+        ""
+      )}
     </Container>
   );
 };
