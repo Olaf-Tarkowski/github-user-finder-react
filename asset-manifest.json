@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/github-user-finder-react/static/js/main.60e4b5ad.js",
+    "main.js": "/github-user-finder-react/static/js/main.7d0717af.js",
     "static/js/787.17c2234e.chunk.js": "/github-user-finder-react/static/js/787.17c2234e.chunk.js",
     "index.html": "/github-user-finder-react/index.html",
-    "main.60e4b5ad.js.map": "/github-user-finder-react/static/js/main.60e4b5ad.js.map",
+    "main.7d0717af.js.map": "/github-user-finder-react/static/js/main.7d0717af.js.map",
     "787.17c2234e.chunk.js.map": "/github-user-finder-react/static/js/787.17c2234e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.60e4b5ad.js"
+    "static/js/main.7d0717af.js"
   ]
 }
