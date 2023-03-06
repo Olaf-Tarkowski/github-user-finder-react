@@ -12,9 +12,6 @@ html {
 body {
   background-color: #fafafa;
   font-family: 'Roboto Condensed', sans-serif;
-  margin: 20px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
 }
 `;
